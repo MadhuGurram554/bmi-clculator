@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(204, 174, 224);
+    margin: 10px;
+    margin-left:6em;
+    margin-right:6em;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+h1{
+    color: rgb(255, 9, 9);
+    background-color: rgb(155, 245, 177);
+    border-radius: 15px;
+    text-shadow: ;
+}
+
+th{
+    color: rgba(218, 61, 34, 0.904); 
+}
+button{
+border-color: indianred;
+border-radius: 8px;
+border-style:hidden;
+text-decoration: rgb(235, 19, 235);
+}

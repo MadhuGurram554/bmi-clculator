@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">   
+    <title>BMI_CALCULATOR</title>
+ <script>
+     function callMe()
+
+     {
+         var w=parseInt(document.getElementById("height").value)
+         var h=parseInt(document.getElementById("weight").value)
+         var bmi=w/(h*h)*1000;
+         document.getElementById("res").innerHTML="bmi is"+bmi
+         if (bmi<19)
+            document.getElementById("res1").innerText="Underweight";
+        else if ((bmi>=19)&&(bmi<25))
+            document.getElementById("res2").innerText="Normal";
+        else if ((bmi>=25)&&(bmi<=30))
+            document.getElementById("res3").innerText="Overweight";
+        else
+            document.getElementById("res4").innerText="Obesity";
+     }
+ </script>
+</head>
+<body>
+
+     <center><h1>BMI calculator</h1>
+
+<table>
+<tr>
+    <th><p>Height :</p> </th>
+<td><input type="number" id="height" placeholder=" Enter height in cm"></td>
+</tr>
+
+<tr>
+    <th><p>Weight :</p></th>
+<td><input type="number" id="weight" placeholder="Enter weight in kg"></td>
+</tr>
+</table>
+
+
+<center> <button onclick="callMe()">Calculate</button></center>
+
+<div id="res"></div>
+<div id="res1"></div>
+<div id="res2"></div>   
+<div id="res3"></div>
+<div id="res4"></div>
+
+</body>
+</html>
